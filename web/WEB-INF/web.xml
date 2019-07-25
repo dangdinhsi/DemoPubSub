@@ -19,4 +19,36 @@
         <servlet-name>SubscriberDemo</servlet-name>
         <url-pattern>/sub</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>TaskqueueAdd</servlet-name>
+        <servlet-class>taskqueue.Addqueue</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TaskqueueAdd</servlet-name>
+        <url-pattern>/addqueue</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>TaskqueueGet</servlet-name>
+        <servlet-class>taskqueue.Getqueue</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TaskqueueGet</servlet-name>
+        <url-pattern>/getqueue</url-pattern>
+    </servlet-mapping>
+    <filter>
+        <filter-name>ObjectifyFilter</filter-name>
+        <filter-class>com.googlecode.objectify.ObjectifyFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>ObjectifyFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <filter>
+        <filter-name>ObjectifyRegisterFilter</filter-name>
+        <filter-class>filter.ObjectifyRegister</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>ObjectifyRegisterFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
 </web-app>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cronentries>
+   <!-- <cron>
+        <url>/addqueue</url>
+        <target>1</target> &lt;!&ndash;//tên của version&ndash;&gt;
+        <description>add task queue</description>
+        <schedule>every 1 minutes</schedule>
+    </cron>-->
+   <!-- <cron>
+        <url>/getqueue</url>
+        <target>1</target>
+        <description>get task queue</description>
+        <schedule>every 1 minutes</schedule>
+    </cron>-->
+</cronentries>
